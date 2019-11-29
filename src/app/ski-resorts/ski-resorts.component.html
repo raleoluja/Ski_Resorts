@@ -1,0 +1,30 @@
+<div class="row">
+    <div class="col">
+        <app-ski-view [skiResort]="skiResort"></app-ski-view>
+    </div>
+</div>
+<div class="row">
+    <div class="col">
+        <ngb-tabset>
+            <ngb-tab title="Tracks">
+                <ng-template ngbTabContent>
+                    <app-tracks></app-tracks>
+                </ng-template>
+            </ngb-tab>
+
+            <ngb-tab title="Weather">
+                <ng-template ngbTabContent>
+                    <app-weather></app-weather>
+                </ng-template>
+            </ngb-tab>
+
+            <ngb-tab title="Ski pass">
+                <ng-template ngbTabContent>
+                    <app-skipas></app-skipas>
+                </ng-template>
+            </ngb-tab>
+        </ngb-tabset>
+    </div>
+</div>
+
+
